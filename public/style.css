@@ -1,0 +1,211 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: url(./back.png) center no-repeat;
+    background-size: cover;
+}
+
+.chatroom {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    top: -100%;
+    position: absolute;
+}
+
+.contact {
+    flex-shrink: 0;
+    width: 200px;
+    background-color: rgb(46,46,46);
+}
+
+.contact-name {
+    color:white;
+    padding: 20px 0 0 0;
+    font-size: 40px;
+}
+
+.contact-list {
+    list-style: none;
+    color:white;
+    padding-left: 0;
+    margin: 0;
+}
+
+.contact-item {
+    padding: 20px;
+    border-bottom: 1px solid rgb(64,64,64);
+}
+
+.contact-item-selected {
+    background-color: rgb(55,55,55);
+}
+
+.contact-item:hover {
+    background-color: rgb(64,64,64);
+}
+
+.contact-item:active {
+    background-color: rgb(72,72,72);
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: rgb(245,245,245);
+    padding: 0 10px;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(231,231,231);
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    padding: 10px 0;
+    border-top: 1px solid rgb(231,231,231);
+}
+
+.footer textarea {
+    outline: none;
+    resize: none;
+    flex-grow: 1;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid rgb(231,231,231);
+    background-color: rgb(231,231,231);
+}
+
+.footer textarea:focus {
+    background-color: white;
+}
+
+.footer button {
+    width: 50px;
+    border: 1px solid rgb(231,231,231);
+    background-color: rgb(229,229,229);
+    color: rgb(96,96,96);
+    margin-left: 10px;
+}
+
+.footer button:hover {
+    background-color: rgb(217,217,217);
+}
+
+.footer button:active {
+    background-color: rgb(200,200,200);
+}
+
+.list {
+    flex-grow: 1;
+    padding: 10px 0;
+    overflow: auto;
+}
+
+.avatar {
+    width: 32px;
+    height: 38px;
+}
+
+.message {
+    padding: 8px;
+    margin: 0 8px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.message img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.list-item-right .message {
+    background-color: rgb(152, 225, 101);
+}
+
+.list-item-left .message {
+    background-color: white;
+}
+
+.list-item {
+    display: flex;
+    margin: 8px 0;
+    word-break: break-all;
+}
+
+.list-item-right {
+    justify-content: right;
+    flex-direction: row;
+}
+
+.list-item-left {
+    justify-content: left;
+    flex-direction: row-reverse;
+}
+
+.login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login button {
+    width: 150px;
+    height: 20px;
+    border: 0;
+    border-radius: 4px;
+    background-color: rgb(152, 225, 101);
+    color: rgb(96,96,96);
+    box-sizing: content-box;
+    margin: 15px;
+    padding: 5px;
+    transition: 0.1s;
+}
+
+.login button:hover {
+    background-color: rgb(137, 201, 91);
+}
+
+.login button:active {
+    background-color: rgb(131, 192, 88);
+}
+
+
+.login input {
+    color: rgb(96,96,96);
+    outline: none;
+    resize: none;
+    flex-grow: 1;
+    font-size: 14px;
+    font-family: inherit;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(231,231,231);
+    padding: 5px 10px;
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+    transition: 0.2s;
+    flex-grow: 0;
+}
+
+.login input:hover {
+    background-color: rgb(246,246,246);
+}
+
+.login input:focus {
+    background-color: white;
+    place-content: hidden;
+}
